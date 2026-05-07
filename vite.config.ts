@@ -5,7 +5,7 @@ export default defineConfig({
   base: process.env.PAGES_BASE ?? "/open-school-lab/",
   build: {
     outDir: "docs",
-    emptyOutDir: true,
+    emptyOutDir: false,
     sourcemap: true,
     rollupOptions: {
       output: {
