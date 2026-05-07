@@ -1,0 +1,7 @@
+docs/index.html
+docs/404.html
+docs/assets/
+test-results/
+playwright-report/
+node_modules/
+coverage/
