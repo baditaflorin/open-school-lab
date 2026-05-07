@@ -1,0 +1,16 @@
+{
+  "name": "Open School Lab",
+  "short_name": "School Lab",
+  "description": "Browser-based science, math, and engineering labs for classrooms without physical equipment.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f2",
+  "theme_color": "#126b5c",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
