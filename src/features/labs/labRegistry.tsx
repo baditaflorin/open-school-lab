@@ -625,5 +625,9 @@ export function getLab(id: string): LabDefinition {
 }
 
 export function LabRenderer({ lab }: { lab: LabDefinition }) {
-  return <GenericLab lab={lab} />;
+  // `key` forces a remount when the lab changes so GenericLab's internal
+  // control-values state is reinitialized from the new lab's defaults
+  // instead of carrying over stale keys from the previous lab (which
+  // produced blank sliders and NaN metrics — see App.test.tsx).
+  return <GenericLab key={lab.id} lab={lab} />;
 }
